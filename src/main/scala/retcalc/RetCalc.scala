@@ -47,6 +47,7 @@ object RetCalc {
         loop(months + 1)
     }
 
-    loop(0)
+    if (netIncome > currentExpenses) loop(0)
+    else Int.MaxValue
   }
 }
